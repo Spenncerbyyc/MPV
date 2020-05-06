@@ -1,23 +1,30 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div id='grid-container'>
+<Protein/>
+<Pairing/>
+<Picture/>
+<Somm/>
+</div>
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
-    }
+export default {
+  name: "Root",
+  components: {Protein, Pairing, Picture, Somm,}
+  };
 </script>
+
+<style>
+    body {
+        font-family: Nunito
+    }
+
+    #grid-container {
+        min-height: 50vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+</style>
+
