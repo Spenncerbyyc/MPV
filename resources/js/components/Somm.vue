@@ -1,25 +1,80 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div>
+    <div id="Somm">
+      <h1>{{ ProteinSelection }} - {{ WineSelection }}</h1>
     </div>
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
+export default {
+  data: function() {
+    return {
+      ProteinSelection: "",
+      WineSelection: "",
+    };
+    },
+    mounted: function() {
+    this.$root.$on("ProteinSelection", this.ProteinSelection);
+    this.$root.$on("WinePairing", this.WinePairing);
+        },
+    methods: {
+        getWine() {
+      if (this.ProteinSelection === this.WineSelection) {
+        console.log("Here is your wine!");
+      }
+      if (this.ProteinSelection === "Red Meat") {
+        if (this.WineSelection === "Cabernet Sauvignon") {
+          this.WinePairing;
+        } else {
+          //this.;
+        }
+      }
+      if (this.ProteinSelection === "Poultry") {
+        if (this.WineSelection === "Viognier") {
+          this.WinePairing;
+        } else {
+          //this.;
+        }
+      }
+      if (this.ProteinSelection === "Cured Meat") {
+        if (this.WineSelection === "Grenache") {
+          this.WinePairing;
+        } else {
+          //this.;
+        if (this.ProteinSelection === "Fish") {
+        if (this.WineSelection === "Sauvignon Blanc") {
+          this.this.WinePairing;
+        } else {
+          //this.;
+          if (this.ProteinSelection === "Veggies") {
+        if (this.WineSelection === "Pinot Noir") {
+          this.this.WinePairing;
+        } else {
+          //this.;
+        }
+        }
+        }
+        }
+        }
+      }
         }
     }
+}
 </script>
 
+//Reccomendation response text
+
 //Presents selection with some info with logic, this wine will match because this
+
+//Red Meat - Bold Red Cab Sauv, IPA
+
+// Chicken - Rich White Viognier, Wheat Beer
+
+// Pork - Medium Red Grenache, Amber Ale
+
+// Fish - Dry White Sauv Blanc, Brown Ale
+
+// Veggies - Pinot Noir, Saison
+
+//Front end asks API, API is Sommelier, API returns Axios call, API returns JSON object JSON location, API will have key value pair, keys are proteins,
+//values are more key value pairs, image title/title, use API as mule,

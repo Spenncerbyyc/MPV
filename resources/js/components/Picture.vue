@@ -13,12 +13,12 @@ export default {
     };
   },
   mounted: function() {
-    this.$root.$on("WineSelection", this.getWinePairing);
+    this.$root.$on("WinePairing", this.getWinePairing);
   },
   methods: {
     getWinePairing: function(selection) {
       axios
-        .get("/drink-quote")
+      .post("/drink-quote",{"UserSelection":selection})
         .then(response => {
           console.log(response);
           this.$root.$emit("WinePairing", response.data.quote);
@@ -29,8 +29,10 @@ export default {
         });
     },
     WinePairing: function(selection) {
-      this.$root.$emit("WinePairing", "This Wine Matches");
+    this.$root.$emit("WinePairing", "This Wine Matches");
     }
   }
 };
-</script>
+
+
+
