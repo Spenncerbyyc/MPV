@@ -17,8 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-
 Route::post('/drink-quote', 'MVPApiController@getPairing');
 
 //new route that will kick off the view component, router to controller, look at the vue because it's specific
