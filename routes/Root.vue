@@ -8,7 +8,6 @@
 </template>
 
 <script>
-
 import Protein from "./Protein.vue";
 import Pairing from "./Pairing.vue";
 import Picture from "./Picture.vue";
