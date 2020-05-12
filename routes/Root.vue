@@ -11,7 +11,7 @@
 import Protein from "./Protein.vue";
 import Pairing from "./Pairing.vue";
 import Picture from "./Picture.vue";
-import Somm from "./Somm.vue";
+//import Somm from "./Somm.vue";
 
 export default {
   name: "Root",

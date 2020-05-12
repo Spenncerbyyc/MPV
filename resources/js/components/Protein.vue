@@ -5,7 +5,7 @@
     <div class="dropdown">
       <button class="dropbtn">1. Please Pick Your Protein</button>
       <div class="dropdown-content" style="left:0;">
-      <a href="#">Red Meat</a> each a tag needs click like option in RPS
+      <a href="#">Red Meat</a>
         <a href="#">Poultry</a>
         <a href="#">Cured Meat</a>
         <a href="#">Fish</a>
@@ -81,13 +81,4 @@ export default {
 }
 </style>
 
-//Red Meat - Bold Red Cab Sauv, IPA
-
-// Chicken - Rich White Viognier, Wheat Beer
-
-// Pork - Medium Red Grenache, Amber Ale
-
-// Fish - Dry White Sauv Blanc, Brown Ale
-
-// Veggies - Pinot Noir, Saison
 
