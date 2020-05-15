@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{quote}}</h2>
+
   </div>
 </template>
 
@@ -13,15 +13,17 @@ export default {
     };
   },
   mounted: function() {
-    this.$root.$on("WinePairing", this.getWinePairing);
+    this.$root.$on("WineSelection", this.getWinePairing);
   },
   methods: {
     getWinePairing: function(selection) {
+    console.log("We have your wine pairing!");
       axios
       .post("/drink-quote",{"UserSelection":selection})
-        .then(response => {
+        .then(response=> {
           console.log(response);
-          this.$root.$emit("WinePairing", response.data.quote);
+          this.$root.$emit("WinePairing", response.data.pairing);
+          //add picture component to show data from call,
         })
         .catch(error => {
           console.log(error);
@@ -33,6 +35,6 @@ export default {
     }
   }
 };
-
+</script>
 
 

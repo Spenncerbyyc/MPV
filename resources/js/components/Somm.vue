@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div id="Somm">
       <h1>{{ ProteinSelection }} - {{ WineSelection }}</h1>
     </div>
@@ -22,45 +21,12 @@ export default {
       if (this.ProteinSelection === this.WineSelection) {
         console.log("Here is your wine!");
       }
-      if (this.ProteinSelection === "Red Meat") {
-        if (this.WineSelection === "Cabernet Sauvignon") {
-          this.WinePairing;
-        } else {
-          //this.;
-        }
-      }
-      if (this.ProteinSelection === "Poultry") {
-        if (this.WineSelection === "Viognier") {
-          this.WinePairing;
-        } else {
-          //this.;
-        }
-      }
-      if (this.ProteinSelection === "Cured Meat") {
-        if (this.WineSelection === "Grenache") {
-          this.WinePairing;
-        } else {
-          //this.;
-        if (this.ProteinSelection === "Fish") {
-        if (this.WineSelection === "Sauvignon Blanc") {
-          this.this.WinePairing;
-        } else {
-          //this.;
-          if (this.ProteinSelection === "Veggies") {
-        if (this.WineSelection === "Pinot Noir") {
-          this.this.WinePairing;
-        } else {
-          //this.;
-        }
-        }
-        }
-        }
-        }
-      }
         }
     }
 }
 </script>
+
+//Set name, description, 
 
 //Reccomendation response text
 
