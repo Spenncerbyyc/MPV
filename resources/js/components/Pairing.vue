@@ -19,7 +19,6 @@ export default {
   },
   methods: {
     ProteinSelection: function(MainCourse) {
-      //call wine selection method
       this.quote = MainCourse;
       this.WineSelection(MainCourse);
     },
@@ -38,7 +37,6 @@ export default {
   font-size: 20px;
   border: none;
 }
-
 .button {
   position: relative;
   display: inline-block;

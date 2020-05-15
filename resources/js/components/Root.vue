@@ -11,11 +11,11 @@
 import Protein from "./Protein.vue";
 import Pairing from "./Pairing.vue";
 import Picture from "./Picture.vue";
-//import Somm from "./Somm.vue";
+import Somm from "./Somm.vue";
 
 export default {
   name: "Root",
-  components: {Protein, Pairing, Picture, Somm,}
+  components: {Protein, Pairing, Picture, Somm}
   };
 </script>
 

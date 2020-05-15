@@ -13,7 +13,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-class RPSApiController extends Controller
+class MVPApiController extends Controller
 
 {
     function getPairing(Request $request) {

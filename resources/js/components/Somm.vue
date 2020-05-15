@@ -6,27 +6,43 @@
 
 <script>
 export default {
-  data: function() {
-    return {
-      ProteinSelection: "",
-      WineSelection: "",
-    };
+name: "Somm",
+data: function() {
+return {
+     quote: "Wine Pairing"
+};
+},
+mounted: function() {
+this.$root.$on("WineSelection", this.getWinePairing);
+},
+  methods: {
+    getPairing: function(selection) {
+    console.log("We have your wine pairing!");
+      axios
+      .post("/drink-quote",{"UserSelection":selection})
+        .then(response=> {
+          console.log(response);
+          this.$root.$emit("WinePairing", response.data.pairing);
+          //add picture component to show data from call,
+        })
+        .catch(error => {
+          console.log(error);
+          this.quote = WinePairing;
+        });
     },
-    mounted: function() {
-    this.$root.$on("ProteinSelection", this.ProteinSelection);
-    this.$root.$on("WinePairing", this.WinePairing);
-        },
-    methods: {
-        getWine() {
-      if (this.ProteinSelection === this.WineSelection) {
-        console.log("Here is your wine!");
-      }
-        }
+    WinePairing: function(selection) {
+    this.$root.$emit("WinePairing", "This Wine Matches");
     }
-}
+  }
+};
 </script>
 
-//Set name, description, 
+
+//mounted: function() {
+ //   this.$root.$on("WineSelection", this.getWinePairing);
+ // },
+
+//Set name, description,
 
 //Reccomendation response text
 
@@ -44,3 +60,7 @@ export default {
 
 //Front end asks API, API is Sommelier, API returns Axios call, API returns JSON object JSON location, API will have key value pair, keys are proteins,
 //values are more key value pairs, image title/title, use API as mule,
+
+// methods: {
+    getWinePairing: function(selection) {
+    console.log("We have your wine pairing!");

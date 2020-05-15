@@ -5,11 +5,11 @@
     <div class="dropdown">
       <button class="dropbtn">1. Please Pick Your Protein</button>
       <div class="dropdown-content" style="left:0;">
-      <a href="#">Red Meat</a>
-        <a href="#">Poultry</a>
-        <a href="#">Cured Meat</a>
-        <a href="#">Fish</a>
-        <a href="#">Vegetarian</a>
+      <a @click="requestRedMeat" href="#">Red Meat</a>
+        <a @click="requestPoultry" href="#">Poultry</a>
+        <a @click="requestCuredMeat" href="#">Cured Meat</a>
+        <a @click="requestFish" href="#">Fish</a>
+        <a @click="requestVegetarian" href="#">Vegetarian</a>
       </div>
     </div>
   </div>
