@@ -20,7 +20,7 @@ class MVPApiController extends Controller
         $pairings = [
             "Red Meat"=>["name"=>"Bold Red","description"=>"The tannins in the cab sauv will compliment the grilled steak.", "image"=>"boldred.jpg"],
             "Poultry"=>["name"=>"Rich White","description"=>"The aromas from the roasted chicken will heighten the flavours in the wine.", "image"=>"viognier.jpeg"],
-            "Cured Meat"=>["name"=>"Medium Red","description"=>"Both the wine and the barbequed pork feature smokey, earthy characteristics.", "image"=>"grenache.jpg"],
+            "CuredMeat"=>["name"=>"Medium Red","description"=>"Both the wine and the barbequed pork feature smokey, earthy characteristics.", "image"=>"grenache.jpg"],
             "Fish"=>["name"=>"Dry White","description"=>"This wine has citrus fruit aspects that will cut through the richness of the fish.", "image"=>"sauvblanc.jpeg"],
             "Vegetarian"=>["name"=>"Light Red","description"=>"The fragrance and the herb notes will bring out the spices in your dish.", "image"=>"pinotnoir.jpeg"],
         ];

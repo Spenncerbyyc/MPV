@@ -9,20 +9,21 @@ export default {
 name: "Somm",
 data: function() {
 return {
-     quote: "Wine Pairing"
+      ProteinSelection: "",
+      WineSelection: "",
 };
 },
 mounted: function() {
 this.$root.$on("WineSelection", this.getWinePairing);
 },
   methods: {
-    getPairing: function(selection) {
+    getWinePairing: function(selection) {
     console.log("We have your wine pairing!");
       axios
       .post("/drink-quote",{"UserSelection":selection})
         .then(response=> {
           console.log(response);
-          this.$root.$emit("WinePairing", response.data.pairing);
+          this.$root.$emit("WinePairing", response.data.pairings);
           //add picture component to show data from call,
         })
         .catch(error => {

@@ -1,20 +1,25 @@
 <template>
-  <div></div>
+  <div><p>{{WineName}} - {{WineDescription}}</p>
+  <img :src="'/images/'+ WineImage" id='drinkimage'>
+  </div>
 </template>
 
 <script>
 export default {
   data: function() {
     return {
+      WineName:"",
+      WineDescription:"",
+      WineImage:"",
       ProteinSelection: "",
-      WineSelection: ""
+      WineSelection: "",
     };
   },
   mounted: function() {
-    this.$root.$on("WinePairing", this.getWinePairing);
+    this.$root.$on("WinePairing", this.showPairing);
   },
   methods: {
-    showWine() {},
+    showPairing(foodandwine) {this.WineName = foodandwine.name; this.WineDescription = foodandwine.description; this.WineImage = foodandwine.image;},
     proteinSelection: function(selection) {
       this.proteinSelection = selection;
       this.getProtein();
@@ -43,6 +48,10 @@ export default {
   }
 };
 </script>
+
+<style>
+#drinkimage{width: 100px; height:100px}
+</style>
 
 
 //export default {

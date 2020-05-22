@@ -1,8 +1,8 @@
 <template>
   <div id="Pairing">
     <button
-      type="button"
-      onclick="alert('One moment while we check our cellar')"
+      type ="button"
+     @click="WineSelection"
     >2. Let us pair a wine with that!</button>
   </div>
 </template>
@@ -20,10 +20,10 @@ export default {
   methods: {
     ProteinSelection: function(MainCourse) {
       this.quote = MainCourse;
-      this.WineSelection(MainCourse);
+      //this.WineSelection(MainCourse);
     },
-    WineSelection: function(selection) {
-      this.$root.$emit("WineSelection",selection);
+    WineSelection: function() {
+      this.$root.$emit("WineSelection", this.quote);
     }
   }
 };
