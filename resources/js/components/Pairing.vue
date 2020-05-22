@@ -1,7 +1,6 @@
 <template>
   <div id="Pairing">
-    <button
-      type ="button"
+    <button type ="button"
      @click="WineSelection"
     >2. Let us pair a wine with that!</button>
   </div>
@@ -38,7 +37,7 @@ export default {
   border: none;
 }
 .button {
-  position: relative;
+  position: center;
   display: inline-block;
 }
 </style>

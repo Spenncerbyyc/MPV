@@ -50,7 +50,13 @@ export default {
 </script>
 
 <style>
-#drinkimage{width: 100px; height:100px}
+#drinkimage{width: 375px; height:375px}
+.center {
+  display: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
 </style>
 
 

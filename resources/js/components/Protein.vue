@@ -1,7 +1,7 @@
 <template>
   <div class="Protein">
     <h2>Dinner and Drink Pairing Generator</h2>
-    <p>Let us know what you're having for dinner.</p>
+    <p>Let us know what you're having for dinner and we'll make a reccomendation.</p>
     <div class="dropdown">
       <button class="dropbtn">1. Please Pick Your Protein</button>
       <div class="dropdown-content" style="left:0;">
@@ -40,6 +40,7 @@ export default {
 
 <style>
 .dropbtn {
+  position: center;
   background-color: #001e96;
   color: white;
   padding: 16px;
@@ -55,7 +56,7 @@ export default {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #001e96;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;

@@ -1916,7 +1916,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -6687,7 +6686,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.button {\n  background-color: #001e96;\n  color: white;\n  padding: 16px;\n  font-size: 20px;\n  border: none;\n}\n.button {\n  position: relative;\n  display: inline-block;\n}\n", ""]);
+exports.push([module.i, "\n.button {\n  background-color: #001e96;\n  color: white;\n  padding: 16px;\n  font-size: 20px;\n  border: none;\n}\n.button {\n  position: center;\n  display: inline-block;\n}\n", ""]);
 
 // exports
 
@@ -6706,7 +6705,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#drinkimage{width: 100px; height:100px}\n", ""]);
+exports.push([module.i, "\n#drinkimage{width: 375px; height:375px}\n.center {\n  display: center;\n  margin-left: auto;\n  margin-right: auto;\n  width: 70%;\n}\n", ""]);
 
 // exports
 
@@ -6725,7 +6724,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.dropbtn {\n  background-color: #001e96;\n  color: white;\n  padding: 16px;\n  font-size: 20px;\n  border: none;\n}\n.dropdown {\n  position: relative;\n  display: inline-block;\n}\n.dropdown-content {\n  display: none;\n  position: absolute;\n  background-color: #f1f1f1;\n  min-width: 160px;\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n  z-index: 1;\n}\n.dropdown-content a {\n  color: white;\n  padding: 12px 16px;\n  text-decoration: none;\n  display: block;\n}\n.dropdown-content a:hover {\n  background-color: #001E96;\n}\n.dropdown:hover .dropdown-content {\n  display: block;\n}\n.dropdown:hover .dropbtn {\n  background-color: #001E96;\n}\n", ""]);
+exports.push([module.i, "\n.dropbtn {\n  position: center;\n  background-color: #001e96;\n  color: white;\n  padding: 16px;\n  font-size: 20px;\n  border: none;\n}\n.dropdown {\n  position: relative;\n  display: inline-block;\n}\n.dropdown-content {\n  display: none;\n  position: absolute;\n  background-color: #001e96;\n  min-width: 160px;\n  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n  z-index: 1;\n}\n.dropdown-content a {\n  color: white;\n  padding: 12px 16px;\n  text-decoration: none;\n  display: block;\n}\n.dropdown-content a:hover {\n  background-color: #001E96;\n}\n.dropdown:hover .dropdown-content {\n  display: block;\n}\n.dropdown:hover .dropbtn {\n  background-color: #001E96;\n}\n", ""]);
 
 // exports
 
@@ -38643,7 +38642,11 @@ var render = function() {
   return _c("div", { staticClass: "Protein" }, [
     _c("h2", [_vm._v("Dinner and Drink Pairing Generator")]),
     _vm._v(" "),
-    _c("p", [_vm._v("Let us know what you're having for dinner.")]),
+    _c("p", [
+      _vm._v(
+        "Let us know what you're having for dinner and we'll make a reccomendation."
+      )
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "dropdown" }, [
       _c("button", { staticClass: "dropbtn" }, [
