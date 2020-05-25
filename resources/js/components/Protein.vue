@@ -1,6 +1,6 @@
 <template>
   <div class="Protein">
-    <h2>Dinner and Drink Pairing Generator</h2>
+    <h4>Dinner and Drink Pairing Generator</h4>
     <p>Let us know what you're having for dinner and we'll make a reccomendation.</p>
     <div class="dropdown">
       <button class="dropbtn">1. Please Pick Your Protein</button>

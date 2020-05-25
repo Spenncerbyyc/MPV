@@ -1,6 +1,6 @@
 <template>
     <div id="Somm">
-      <h1>{{ ProteinSelection }} - {{ WineSelection }}</h1>
+   <p>{{ ProteinSelection}}3. Make another selection by returning to Button #1.{{ WineSelection }}</p>
     </div>
 </template>
 

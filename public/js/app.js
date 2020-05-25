@@ -38640,7 +38640,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "Protein" }, [
-    _c("h2", [_vm._v("Dinner and Drink Pairing Generator")]),
+    _c("h4", [_vm._v("Dinner and Drink Pairing Generator")]),
     _vm._v(" "),
     _c("p", [
       _vm._v(
@@ -38745,8 +38745,12 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "Somm" } }, [
-    _c("h1", [
-      _vm._v(_vm._s(_vm.ProteinSelection) + " - " + _vm._s(_vm.WineSelection))
+    _c("p", [
+      _vm._v(
+        _vm._s(_vm.ProteinSelection) +
+          "3. Make another selection by returning to Button #1." +
+          _vm._s(_vm.WineSelection)
+      )
     ])
   ])
 }
