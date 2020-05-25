@@ -18,11 +18,11 @@ class MVPApiController extends Controller
 {
     function getPairing(Request $request) {
         $pairings = [
-            "Red Meat"=>["name"=>"Bold Red","description"=>"The tannins in the cab sauv will compliment the grilled steak.", "image"=>"boldred.jpg"],
-            "Poultry"=>["name"=>"Rich White","description"=>"The aromas from the roasted chicken will heighten the flavours in the wine.", "image"=>"viognier.jpeg"],
-            "CuredMeat"=>["name"=>"Medium Red","description"=>"Both the wine and the barbequed pork feature smokey, earthy characteristics.", "image"=>"grenache.jpg"],
-            "Fish"=>["name"=>"Dry White","description"=>"This wine has citrus fruit aspects that will cut through the richness of the fish.", "image"=>"sauvblanc.jpeg"],
-            "Vegetarian"=>["name"=>"Light Red","description"=>"The fragrance and the herb notes will bring out the spices in your dish.", "image"=>"pinotnoir.jpeg"],
+            "Red Meat"=>["name"=>"Bold Red","description"=>"The tannins in the Cabernet Sauvignon will compliment the grilled steak.", "image"=>"boldred.jpg"],
+            "Poultry"=>["name"=>"Rich White","description"=>"The aromas from the roasted chicken will heighten the flavours in the Viognier.", "image"=>"viognier.jpeg"],
+            "CuredMeat"=>["name"=>"Medium Red","description"=>"Both the Grenache and the barbequed pork feature smokey, earthy characteristics.", "image"=>"grenache.jpg"],
+            "Fish"=>["name"=>"Dry White","description"=>"The Sauvignon Blanc has citrus fruit aspects that will cut through the richness of the fish.", "image"=>"sauvblanc.jpeg"],
+            "Vegetarian"=>["name"=>"Light Red","description"=>"The fragrance and the herb notes in the Pinot Noir will bring out the spices in your dish.", "image"=>"pinotnoir.jpeg"],
         ];
         return response()->json(["pairings"=>$pairings[$request->UserSelection]]);
     }
